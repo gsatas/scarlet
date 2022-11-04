@@ -252,6 +252,7 @@ if __name__ == "__main__":
     cn_states = result_matrix['CN'].unique()
     mutation_losses = identify_mutation_losses(result_matrix)
     dot_filename = "{}.dot".format(output_prefix)
+    print 'palash is the best'
     print "Outputting DOT file to {}".format(dot_filename)
     output_dot_file(output_prefix, result_matrix, global_tree, vertex_colors, cn_states, draw_leaves, mutation_losses)
 
